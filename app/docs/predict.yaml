@@ -1,0 +1,48 @@
+description: "Expectativa de Vida - Previsão"
+tags:
+  - name: Previsão da expectativa de vida
+consumes:
+  - application/json
+produces:
+  - application/json
+parameters:
+  - description: "O request deve conter um array contendo 15 parametros em ordem: 
+  Country, Year, Status, Life expectancy, Adult Mortality, infant deaths, Alcohol, percentage expenditure, BMI, Polio, Diphtheria, HIV/AIDS, thinness 1-19 years, thinness 5-9 years, Income composition of resources, Schooling"
+    in: "body"
+    name: "body"
+    schema:
+      title: predict
+      type: object
+      properties:
+        array:
+          type: array
+          description: Input Array
+      example:
+        data: [ -1.72,-1.63,0.47,1.34,0.48,-1.17,-0.38,-1.33,-2.52,-2.47,-0.31,-0.56,-0.52,-1.44,-2.01 ]
+    required: true
+responses:
+  "200":
+    description: Previsão efetuada com sucesso. Previsao em anos
+    schema:
+      title: Valid Prediction Response
+      type: object
+      example:
+        data:
+          previsao: 99
+        mensagens: [ ]
+  "400":
+    description: Erro de validação negocial
+    schema:
+      type: object
+      example:
+        data: null
+        mensagens:
+          - "data é obrigatório"
+  "500":
+    description: Erro catastrófico, não programado e não tratado
+    schema:
+      type: object
+      example:
+        data: null
+        mensagens:
+          - "Erro ao carregar o modelo. Ex: File not found"
