@@ -8,7 +8,7 @@ Este repositório foi criado como parte do trabalho final da pós-graduação em
 
 ## Objetivos do Projeto
 
-Nosso objetivo será investigar a relação entre o consumo de álcool, o índice de massa corporal (IMC) e a expectativa de vida.
+O objetivo deste projeto é desenvolver algoritmos capazes de predizer a expectativa de vida com base nesses fatores críticos. A criação desses modelos preditivos permitirá identificar os principais determinantes da expectativa de vida e fornecerá insights valiosos para intervenções em saúde pública, visando melhorar as condições de saúde globalmente.
 
 Seguiremos as seguintes etapas. 
 
