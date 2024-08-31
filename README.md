@@ -18,6 +18,13 @@ Seguiremos as seguintes etapas.
 4. Avaliação e validação dos modelos desenvolvidos.
 5. Deployment.
 
+## Questões e serem respondidas?
+investigar a relação entre o consumo de álcool, o índice de massa corporal (IMC) e a expectativa de vida.
+Estudar como a expectativa de vida tem mudado ao longo do tempo em diferentes países.
+Analisar a correlação entre taxas de mortalidade infantil e de adultos e a expectativa de vida.
+Examinar a influência da escolaridade média da população adulta na expectativa de vida.
+Avaliar a eficácia dos programas de vacinação na redução das taxas de mortalidade infantil e na melhoria da expectativa de vida.
+
 ## Estrutura do projeto
 
 Estrutura básica do projeto abaixo:
@@ -86,3 +93,6 @@ docker build . -t ml-joao-pedro
 ```powershell
 docker run -p 5000:5000 ml-joao-pedro
 ```
+5 - Acesso ao APP em https://ml-joao-pedro.dani.framos.nom.br/#/OrderedMap%20%7B%20%22name%22%3A%20%22Previs%C3%A3o%20da%20expectativa%20de%20vida%22%20%7D/post_predict
+
+Schemes = HTTPS  - Clicar em POST - Try it Out - Preencher Parametros  - Execute
